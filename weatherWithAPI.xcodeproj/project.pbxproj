@@ -13,6 +13,11 @@
 		12BE4E0E2451D4AB00E0E2C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12BE4E0C2451D4AB00E0E2C4 /* Main.storyboard */; };
 		12BE4E102451D4AD00E0E2C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12BE4E0F2451D4AD00E0E2C4 /* Assets.xcassets */; };
 		12BE4E132451D4AD00E0E2C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12BE4E112451D4AD00E0E2C4 /* LaunchScreen.storyboard */; };
+		12BE4E1B2451E9FB00E0E2C4 /* ExtensionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE4E1A2451E9FB00E0E2C4 /* ExtensionVC.swift */; };
+		12BE4E1E2452DFFD00E0E2C4 /* NetworkWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE4E1D2452DFFD00E0E2C4 /* NetworkWeatherManager.swift */; };
+		12BE4E202452E15F00E0E2C4 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE4E1F2452E15F00E0E2C4 /* constants.swift */; };
+		12BE4E222452E58A00E0E2C4 /* currentWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE4E212452E58A00E0E2C4 /* currentWeatherData.swift */; };
+		12BE4E242452E8B700E0E2C4 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE4E232452E8B700E0E2C4 /* CurrentWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		12BE4E0F2451D4AD00E0E2C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12BE4E122451D4AD00E0E2C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12BE4E142451D4AD00E0E2C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12BE4E1A2451E9FB00E0E2C4 /* ExtensionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionVC.swift; sourceTree = "<group>"; };
+		12BE4E1D2452DFFD00E0E2C4 /* NetworkWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWeatherManager.swift; sourceTree = "<group>"; };
+		12BE4E1F2452E15F00E0E2C4 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		12BE4E212452E58A00E0E2C4 /* currentWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentWeatherData.swift; sourceTree = "<group>"; };
+		12BE4E232452E8B700E0E2C4 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +69,25 @@
 				12BE4E062451D4AB00E0E2C4 /* AppDelegate.swift */,
 				12BE4E082451D4AB00E0E2C4 /* SceneDelegate.swift */,
 				12BE4E0A2451D4AB00E0E2C4 /* ViewController.swift */,
+				12BE4E1D2452DFFD00E0E2C4 /* NetworkWeatherManager.swift */,
+				12BE4E232452E8B700E0E2C4 /* CurrentWeather.swift */,
+				12BE4E212452E58A00E0E2C4 /* currentWeatherData.swift */,
+				12BE4E1F2452E15F00E0E2C4 /* constants.swift */,
+				12BE4E1C2451EC7C00E0E2C4 /* Extensions */,
 				12BE4E0C2451D4AB00E0E2C4 /* Main.storyboard */,
 				12BE4E0F2451D4AD00E0E2C4 /* Assets.xcassets */,
 				12BE4E112451D4AD00E0E2C4 /* LaunchScreen.storyboard */,
 				12BE4E142451D4AD00E0E2C4 /* Info.plist */,
 			);
 			path = weatherWithAPI;
+			sourceTree = "<group>";
+		};
+		12BE4E1C2451EC7C00E0E2C4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				12BE4E1A2451E9FB00E0E2C4 /* ExtensionVC.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12BE4E222452E58A00E0E2C4 /* currentWeatherData.swift in Sources */,
 				12BE4E0B2451D4AB00E0E2C4 /* ViewController.swift in Sources */,
+				12BE4E242452E8B700E0E2C4 /* CurrentWeather.swift in Sources */,
+				12BE4E1E2452DFFD00E0E2C4 /* NetworkWeatherManager.swift in Sources */,
+				12BE4E1B2451E9FB00E0E2C4 /* ExtensionVC.swift in Sources */,
 				12BE4E072451D4AB00E0E2C4 /* AppDelegate.swift in Sources */,
 				12BE4E092451D4AB00E0E2C4 /* SceneDelegate.swift in Sources */,
+				12BE4E202452E15F00E0E2C4 /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
